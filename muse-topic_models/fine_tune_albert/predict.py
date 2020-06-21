@@ -1,6 +1,6 @@
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"  # specify which GPU(s) to be used
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # specify which GPU(s) to be used
 import numpy as np
 import pandas as pd
 import glob, json, argparse
@@ -15,13 +15,13 @@ from config import get_parameters
 from data import prepare_data, get_class_names
 from metrics import read_agg_label_files, score_partition
 
-parser = argparse.ArgumentParser(description = 'Supervised fine-tuning of AlBert for MuSe-Topic')
+parser = argparse.ArgumentParser(description = 'Score fine-tuned models of AlBert for MuSe-Topic')
 # raw data paths
 parser.add_argument('-predict', '--predict_partition', dest = 'predict_partition', type = str, required = False,
                     default = 'test',
                     help = 'specify the partition to be predicted.')
 parser.add_argument('-evaluate', '--evaluate', dest = 'evaluate', required = False, action = 'store_true', 
-                    help = 'specify if the model should evaluate (Assuming labels available).')
+                    help = 'specify if the model should evaluate (assuming labels available).')
 parser.add_argument('-pd', '--processed_data_path', type = str, dest = 'processed_data_path', required = False, action = 'store', 
                     default = "../../data/processed_tasks/", 
                     help = 'specify the data folder')

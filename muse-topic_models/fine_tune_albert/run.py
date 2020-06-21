@@ -2,7 +2,7 @@
 # coding: utf-8
 import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"  # specify which GPU(s) to be used
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # specify which GPU(s) to be used
 import numpy as np
 import pandas as pd
 import glob, json, argparse
@@ -25,7 +25,7 @@ parser.add_argument('-c', '--class_name', type = str, dest = 'class_name', requi
 parser.add_argument('-pd', '--processed_data_path', type = str, dest = 'processed_data_path', required = False, action = 'store', 
                     default = "../../data/processed_tasks/", 
                     help = 'specify the data folder')
-parser.add_argument('-evaluate_test', '--evaluate_test', dest = 'evaluate_test', required = False, action = 'store_true', 
+parser.add_argument('-et', '--evaluate_test', dest = 'evaluate_test', required = False, action = 'store_true', 
                     help = 'specify if the model should evaluate on test (assuming labels available).')
 
 # static except you want to try out other models
