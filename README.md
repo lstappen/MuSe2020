@@ -1,6 +1,6 @@
 # MuSe2020
 Accompany code to reproduce the baselines of the International Multimodal Sentiment Analysis Challenge (MuSe 2020).
-Latest results and update version: [Paper](https://arxiv.org/pdf/2004.14858.pdf)
+Latest results and up-to-date version: [Paper](https://arxiv.org/pdf/2004.14858.pdf)
 
 ## Abstract
 **Mu**ltimodal **Se**ntiment Analysis in Real-life Media (MuSe) 2020 is 
