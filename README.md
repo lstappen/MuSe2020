@@ -47,6 +47,25 @@ end-to-end approach. In addition to these models, we use Support Vector
 Machines (SVMs), a multimodal Transformer and a fine-tuned NLP
 Transformer Albert to predict the classes of *<span>MuSe-Topic</span>*.
 
+### End-to-End Learning [here](https://github.com/lstappen/MuSe2020/tree/master/end2you)
+-------------------
+
+As our end-to-end baseline we use End2You; an
+open-source toolkit for multimodal profiling by end-to-end deep
+learning. For our purposes, we
+utilise three modalities, namely, audio, visual, and textual. Our audio
+model is inspired by a recently proposed emotion recognition
+model, and is comprised of a convolution recurrent
+neural network (CRNN). In particular, we use 3 convolution layers to
+extract spatial features from the raw segments. Our visual information
+is comprised of the <span>VGGface</span>features, where we use zero
+vectors when the face is not detected in a frame. Finally, as text
+features we use <span>FastText</span>, where we replicate the text
+features that span across several segments. We concatenate all uni-modal
+features and feed them to a one layer LSTM to capture the temporal
+dynamics in the data before the final prediction.
+Contact: panagiotis.tzirakis12@imperial.ac.uk
+
 ### Early Fusion LSTM-RNN with Self-Attention [here](https://github.com/lstappen/MuSe2020/tree/master/rnn_att)
 -----------------------------------------
 
@@ -67,24 +86,7 @@ is then input into a feed-forward layer to provide the logits. In the
 former case, all the input samples are further segmented into 50
 time-step sub-segments which are all used for training, whereas in the
 latter we pad/crop all sequences to 500 steps.
-
-### End-to-End Learning [here](https://github.com/lstappen/MuSe2020/tree/master/end2you)
--------------------
-
-As our end-to-end baseline we use End2You; an
-open-source toolkit for multimodal profiling by end-to-end deep
-learning. For our purposes, we
-utilise three modalities, namely, audio, visual, and textual. Our audio
-model is inspired by a recently proposed emotion recognition
-model, and is comprised of a convolution recurrent
-neural network (CRNN). In particular, we use 3 convolution layers to
-extract spatial features from the raw segments. Our visual information
-is comprised of the <span>VGGface</span>features, where we use zero
-vectors when the face is not detected in a frame. Finally, as text
-features we use <span>FastText</span>, where we replicate the text
-features that span across several segments. We concatenate all uni-modal
-features and feed them to a one layer LSTM to capture the temporal
-dynamics in the data before the final prediction.
+Contact: georgios.rizos12@imperial.ac.uk
 
 ### Multimodal Transformer [here](https://github.com/lstappen/MuSe2020/tree/master/-)
 ----------------------
@@ -103,6 +105,7 @@ we always utilise 3 feature sets, either of our three (tri), or of only
 two (bi) different modalities fed into the network. We noticed that
 after approximately 20 epochs the network converged. The model uses 5
 crossmodal attention heads and an initial learning rate of *10^{-3}*.
+Contact: lukas.stappen@informatik.uni-augsburg.de
 
 ### Fine-tuned Albert [here](https://github.com/lstappen/MuSe2020/tree/master/muse-topic_models/fine_tune_albert)
 ------
@@ -121,6 +124,7 @@ balanced class weights to have the best effect. We applied a learning
 rate of *10^{-5}* for the adjusted Adam Optimiser and set *\epsilon* to
 *10^{-8}*. With a sequence length of *300*, the batch size has to be
 limited to *12* samples to be trained with 32GB GPU memory.
+Contact: lukas.stappen@informatik.uni-augsburg.de
 
 ### Support Vector Machines [here](https://github.com/lstappen/MuSe2020/tree/master/muse-topic_models/svms)
 -----------------------
@@ -135,6 +139,7 @@ always optimised from *10^{-5}* to *1* during the development phase, and
 the best value for C is reported. In contrast to our other approaches,
 we retrain the model on a concatenation of the train and development
 sets to predict the final test set result.
+Contact: alice.baird@informatik.uni-augsburg.de
 
 ## Baseline Features
 
@@ -217,4 +222,4 @@ metric for this sub-challenge is concordance correlation coefficient
 
 
 ## Evaluation
-The easiest way is to generate one file as described on the website. Good examples how to prepare the format can be found in the muse-topic_models e.g. multimodal transformer or albert.
+The easiest way is to generate a file with all the model predictions as described on the website and then score it against the aggregated labels. Good examples of how to prepare the format can be found in the muse-topic_models, e.g. multimodal transformer or albert (metric.py).
