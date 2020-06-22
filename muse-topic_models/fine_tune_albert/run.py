@@ -6,7 +6,6 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # specify which GPU(s) to be used
 import numpy as np
 import pandas as pd
 import glob, json, argparse
-from multiprocessing import cpu_count
 from sklearn.utils import class_weight
 
 import torch
@@ -117,7 +116,7 @@ if __name__  == "__main__":
     task_data_path = os.path.join(args.processed_data_path, 'c2_muse_topic')
     transcription_path = os.path.join(task_data_path, 'transcription_segments')
 
-    Param = get_parameters()
+    Param = get_parameters(args)
 
     # create working folders
     if not os.path.exists(Param['output_dir']):

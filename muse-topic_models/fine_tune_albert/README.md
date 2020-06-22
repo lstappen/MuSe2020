@@ -85,7 +85,10 @@ Trained and the baseline models can be scored using predict.py. The data format 
 ## Baseline models
 The models can be downloaded here:
 
-1. Download
+1. Download models:
+- valence: https://megastore.uni-augsburg.de/get/tIpHPxdefR/
+- arousal: https://megastore.uni-augsburg.de/get/ANsZfhOiH5/
+- topic: https://megastore.uni-augsburg.de/get/GLu92SGL_R/
 2. Unzip in experiments/best_model/
 
 

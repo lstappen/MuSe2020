@@ -1,4 +1,7 @@
-def get_parameters():
+import os
+from multiprocessing import cpu_count
+
+def get_parameters(args):
     
     Param = {
       'output_dir': os.path.join('experiments/outputs/', args.class_name + str(args.regression_mode)), 
