@@ -104,7 +104,7 @@ features across all modalities. To predict topics, valence, and arousal
 we always utilise 3 feature sets, either of our three (tri), or of only
 two (bi) different modalities fed into the network. We noticed that
 after approximately 20 epochs the network converged. The model uses 5
-crossmodal attention heads and an initial learning rate of *10^{-3}*.
+crossmodal attention heads and an initial learning rate of *10<sup>-3</sup>*.
 Contact: lukas.stappen@informatik.uni-augsburg.de
 
 ### Fine-tuned Albert [here](https://github.com/lstappen/MuSe2020/tree/master/muse-topic_models/fine_tune_albert)
@@ -121,8 +121,8 @@ to achieve state-of-the-art results on several benchmarks, despite
 having a relatively smaller number of parameters. For our purposes, we
 found a supervised tuning on the train partition for 3 epochs and
 balanced class weights to have the best effect. We applied a learning
-rate of *10^{-5}* for the adjusted Adam Optimiser and set *\epsilon* to
-*10^{-8}*. With a sequence length of *300*, the batch size has to be
+rate of *10<sup>-5</sup>* for the adjusted Adam Optimiser and set *\epsilon* to
+*10<sup>-8</sup>*. With a sequence length of *300*, the batch size has to be
 limited to *12* samples to be trained with 32GB GPU memory.
 Contact: lukas.stappen@informatik.uni-augsburg.de
 
@@ -135,7 +135,7 @@ through the use of conventional and easily reproducible Support Vector
 Machines (SVMs). These experiments employ the Scikit-learn toolkit, with
 a LINEARSVR classifier. No standardisation or normalisation was applied
 to any of the reported feature sets. The complexity parameter C was
-always optimised from *10^{-5}* to *1* during the development phase, and
+always optimised from *10<sup>-5</sup>* to *1* during the development phase, and
 the best value for C is reported. In contrast to our other approaches,
 we retrain the model on a concatenation of the train and development
 sets to predict the final test set result.
@@ -187,7 +187,7 @@ taken.
 
 In the *<span>MuSe-Topic</span>Sub-challenge*, participants are
 predicting 10-classes of domain-specific (automotive, as given by the
-chosen database) topics[^2] as the target of emotions. In addition,
+chosen database) topics as the target of emotions. In addition,
 three classes (low, medium, and high) of valence and arousal should be
 predicted <span>i.e.,</span>for each topic segment, one valence and one
 arousal value. These classes are the mean value of the temporally
