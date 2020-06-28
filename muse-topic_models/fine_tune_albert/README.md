@@ -11,7 +11,7 @@ It is build up on open-source high-level APIs Simple Transformers (https://githu
 2. Create a virtenv 
 `python3 -m venv /path/to/new/virtual/environment/albert`
 3. Activate virtenv
-`source ./path/to/new/virtual/environment/albert/bin/active`
+`source ./path/to/new/virtual/environment/albert/bin/activate`
 4. Install Apex if you are using fp16 training. Please follow the instructions [here](https://github.com/NVIDIA/apex). 
 5. Install all other packages (excluding Apex, installing Apex from pip has caused issues for several people.)
 `pip3 install -r requirements.txt`
