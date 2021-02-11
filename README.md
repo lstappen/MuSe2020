@@ -2,15 +2,35 @@
 Accompany code to reproduce the baselines of the International Multimodal Sentiment Analysis Challenge (MuSe 2020).
 Latest results and up-to-date version: [Paper](https://arxiv.org/pdf/2004.14858.pdf)
 
+
+## Citation
+If you use this code, models etc., please cite the following paper:
+```bibtex
+@inproceedings{stappen2020muse,
+  title={MuSe 2020 Challenge and Workshop: Multimodal Sentiment Analysis, Emotion-target Engagement and Trustworthiness Detection in Real-life Media: Emotional Car Reviews in-the-wild},
+  author={Stappen, Lukas and Baird, Alice and Rizos, Georgios and Tzirakis, Panagiotis and Du, Xinchen and Hafner, Felix and Schumann, Lea and Mallol-Ragolta, Adria and Schuller, Bjoern W and Lefter, Iulia and others},
+  booktitle={Proceedings of the 1st International on Multimodal Sentiment Analysis in Real-life Media Challenge and Workshop},
+  pages={35--44},
+  year={2020}
+}
+```
+Dataset paper:
+```bibtex
+@article{stappen2021multimodal,
+  title={The Multimodal Sentiment Analysis in Car Reviews (MuSe-CaR) Dataset: Collection, Insights and Improvements},
+  author={Stappen, Lukas and Baird, Alice and Schumann, Lea and Schuller, Bj{\"o}rn},
+  journal={arXiv preprint arXiv:2101.06053},
+  year={2021}
+}
+```
+
 ## Abstract
 **Mu**ltimodal **Se**ntiment Analysis in Real-life Media (MuSe) 2020 is 
 a Challenge-based Workshop focusing on the tasks of sentiment
 recognition, as well as emotion-target engagement and trustworthiness
-detection by means of more comprehensively integrating the audio-visual
-and language modalities. The purpose of MuSe 2020 is to bring together
-communities from different disciplines; mainly, the audio-visual emotion
-recognition community (signal-based), and the sentiment analysis
-community (symbol-based). We present three distinct sub-challenges:
+detection. 
+
+We present three distinct sub-challenges:
 <span>MuSe-Wild</span>, which focuses on continuous emotion (arousal and
 valence) prediction; <span>MuSe-Topic</span>, in which participants
 recognise 10 domain-specific topics as the target of 3-class (low,
