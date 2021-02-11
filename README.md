@@ -3,6 +3,25 @@ Accompany code to reproduce the baselines of the International Multimodal Sentim
 Latest results and up-to-date version: [Paper](https://arxiv.org/pdf/2004.14858.pdf)
 
 
+## Abstract
+**Mu**ltimodal **Se**ntiment Analysis in Real-life Media (MuSe) 2020 is 
+a Challenge-based Workshop focusing on the tasks of sentiment
+recognition, as well as emotion-target engagement and trustworthiness
+detection. 
+
+We present three distinct sub-challenges:
+<span>MuSe-Wild</span>, which focuses on continuous emotion (arousal and
+valence) prediction; <span>MuSe-Topic</span>, in which participants
+recognise 10 domain-specific topics as the target of 3-class (low,
+medium, high) emotions; and <span>MuSe-Trust</span>, in which the novel
+aspect of trustworthiness is to be predicted. For each
+sub-challenge, a competitive baseline for participants is set; namely,
+on test we report for <span>MuSe-Wild</span> combined (valence and
+arousal) CCC of *.2568*, for <span>MuSe-Topic</span> score (computed as
+*0.34* x UAR + *0.66* x F1) of *76.78*% on the 10-class topic and
+*40.64*% on the 3-class emotion prediction, and for
+<span>MuSe-Trust</span> CCC of *.4359*.
+
 ## Citation
 If you use this code, models etc., please cite the following paper:
 ```bibtex
@@ -23,25 +42,6 @@ Dataset paper:
   year={2021}
 }
 ```
-
-## Abstract
-**Mu**ltimodal **Se**ntiment Analysis in Real-life Media (MuSe) 2020 is 
-a Challenge-based Workshop focusing on the tasks of sentiment
-recognition, as well as emotion-target engagement and trustworthiness
-detection. 
-
-We present three distinct sub-challenges:
-<span>MuSe-Wild</span>, which focuses on continuous emotion (arousal and
-valence) prediction; <span>MuSe-Topic</span>, in which participants
-recognise 10 domain-specific topics as the target of 3-class (low,
-medium, high) emotions; and <span>MuSe-Trust</span>, in which the novel
-aspect of trustworthiness is to be predicted. For each
-sub-challenge, a competitive baseline for participants is set; namely,
-on test we report for <span>MuSe-Wild</span> combined (valence and
-arousal) CCC of *.2568*, for <span>MuSe-Topic</span> score (computed as
-*0.34* x UAR + *0.66* x F1) of *76.78*% on the 10-class topic and
-*40.64*% on the 3-class emotion prediction, and for
-<span>MuSe-Trust</span> CCC of *.4359*.
 
 ## Introduction
 **Mu**ltimodal **Se**ntiment Analysis in Real-life Media (MuSe) 2020 is
