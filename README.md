@@ -9,18 +9,18 @@ a Challenge-based Workshop focusing on the tasks of sentiment
 recognition, as well as emotion-target engagement and trustworthiness
 detection. 
 
-We present three distinct sub-challenges:
-<span>MuSe-Wild</span>, which focuses on continuous emotion (arousal and
-valence) prediction; <span>MuSe-Topic</span>, in which participants
-recognise 10 domain-specific topics as the target of 3-class (low,
-medium, high) emotions; and <span>MuSe-Trust</span>, in which the novel
-aspect of trustworthiness is to be predicted. For each
-sub-challenge, a competitive baseline for participants is set; namely,
-on test we report for <span>MuSe-Wild</span> combined (valence and
-arousal) CCC of *.2568*, for <span>MuSe-Topic</span> score (computed as
+We present three distinct sub-challenges: <br>
+**MuSe-Wild**, which focuses on continuous emotion (arousal and valence) prediction <br>
+**MuSe-Topic**, in which participants
+recognise 10 domain-specific topics as the target of 3-class (low, medium, high) emotions <br>
+**MuSe-Trust**, in which the novel aspect of trustworthiness is to be predicted. 
+ <br>
+For each sub-challenge, a competitive baseline for participants is set; namely,
+on test we report for **MuSe-Wild** combined (valence and
+arousal) CCC of *.2568*, for **MuSe-Topic** score (computed as
 *0.34* x UAR + *0.66* x F1) of *76.78*% on the 10-class topic and
 *40.64*% on the 3-class emotion prediction, and for
-<span>MuSe-Trust</span> CCC of *.4359*.
+**MuSe-Trust** CCC of *.4359*.
 
 ## Citation
 If you use this code, models etc., please cite the following paper:
