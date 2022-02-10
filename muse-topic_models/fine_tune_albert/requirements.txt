@@ -46,7 +46,7 @@ simpletransformers==0.23.2
 six==1.14.0
 tensorboard==1.14.0
 tensorboardX==2.0
-tensorflow==1.14.0
+tensorflow==2.5.3
 tensorflow-estimator==1.14.0
 tensorflow-gpu==1.14.0
 termcolor==1.1.0
